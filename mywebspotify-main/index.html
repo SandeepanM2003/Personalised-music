@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandy Music</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="apple-touch-icon" sizes="256x256" href="./2.jpg" />
+    <link rel="icon" type="image/png" href="./2.jpg" sizes="256x256" />
+    <style></style>
+  </head>
+  <body class="color-change-5x">
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="./2.jpg" class="jello-vertical" id="myBtn" />
+          Sandy Music
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <section class="category__section section" id="category">
+          <div class="tab__list">
+            <div class="title__container tabs">
+              <div class="section__titles category__titles">
+                <div
+                  class="section__title filter-btn hvr-bounce-to-right"
+                  data-id="All"
+                >
+                  <span class="dot"></span>
+                  <h1 class="primary__title">All</h1>
+                </div>
+              </div>
+              <div class="section__titles">
+                <div
+                  class="section__title filter-btn hvr-bounce-to-right"
+                  data-id="English"
+                >
+                  <span class="dot"></span>
+                  <h1 class="primary__title">English</h1>
+                </div>
+              </div>
+
+              <div class="section__titles">
+                <div
+                  class="section__title filter-btn hvr-bounce-to-right"
+                  data-id="Hindi"
+                >
+                  <span class="dot"></span>
+                  <h1 class="primary__title">Hindi</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="songItemContainer"></div>
+      </div>
+
+      <div class="songBanner">
+        <div class="profile-container">
+          <div class="Vimg">
+            <div class="display">
+              <div class="timer_dial">
+                <h1 class="display__time-left">00:00</h1>
+              </div>
+              <p class="display__end-time"></p>
+            </div>
+          </div>
+          <div class="Vcontent">
+            <div class="timer__controls">
+              <button
+                style="border-top-left-radius: 80px"
+                data-time="300"
+                class="timer__button"
+              >
+                Rest 5
+              </button>
+              <button
+                style="border-top-right-radius: 80px"
+                data-time="900"
+                class="timer__button"
+              >
+                Quick 15
+              </button>
+              <button
+                style="border-bottom-left-radius: 80px"
+                data-time="1500"
+                class="timer__button"
+              >
+                Focus 25
+              </button>
+              <button
+                style="border-bottom-right-radius: 80px"
+                data-time="3300"
+                class="timer__button"
+              >
+                Work 55
+              </button>
+              <form name="customForm" id="custom">
+                <input type="text" name="minutes" placeholder="Enter Minutes" />
+                <button type="submit">Enter</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom" id="player">
+      <div class="icons">
+        <!-- fontawesome icons -->
+        <i
+          class="fas fa-2x fa-step-backward"
+          id="previous"
+          data-id="previous"
+        ></i>
+        <i
+          class="far fa-2x fa-play-circle"
+          id="masterPlay"
+          data-id="masterPlay"
+        ></i>
+        <i class="fas fa-2x fa-step-forward" id="forward" data-id="forward"></i>
+      </div>
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+
+      <div class="songInfo">
+        <img src="playing.gif" width="42px" alt="" id="gif" />
+        <span id="masterSongName">Jab We Met - Tum Se Hi</span>
+      </div>
+    </div>
+    <script src="products.js"></script>
+    <script src="./timer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
